@@ -5,15 +5,11 @@ import {
   StyleSheet,
   Image,
   StatusBar,
-  Dimensions,
   SafeAreaView,
 } from 'react-native';
 
 import Swiper from 'react-native-deck-swiper';
-import data from './data';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-
-const {width, height} = Dimensions.get('window');
+import {height, width, colors} from '../src/constants/index';
 
 const cardsData = [
   {
@@ -63,14 +59,6 @@ const cardsData = [
   },
 ];
 
-export const colors = {
-  red: '#EC2379',
-  blue: '#0070FF',
-  gray: '#777777',
-  white: '#ffffff',
-  black: '#000000',
-};
-
 const Card = ({card}) => {
   return (
     <View style={styles.card}>
@@ -88,15 +76,7 @@ const Card = ({card}) => {
   );
 };
 
-const CardDetails = ({index}) => (
-  <View style={styles.cardDetails} key={data[index].id}>
-    <Text style={[styles.text, styles.heading]}>{data[index].name}</Text>
-    <Text style={[styles.text, styles.price]}>{data[index].price}</Text>
-  </View>
-);
-
 const swiperRef = React.createRef();
-const transitionRef = React.createRef();
 
 const HomeScreen = ({navigation}) => {
   const [index, setIndex] = React.useState(0);
@@ -174,6 +154,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#80c0f3',
+    justifyContent: 'flex-start',
   },
   swiperContainer: {
     flex: 0.55,
@@ -195,18 +176,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '500',
   },
-  bottomButtonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
   card: {
     right: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#0000',
-    shadowColor: colors.black,
-    shadowOpacity: 0.1,
-    shadowRadius: 40,
     ...cardStyle,
   },
   cardImage: {

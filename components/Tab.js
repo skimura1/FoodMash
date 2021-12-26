@@ -34,10 +34,10 @@ const Tabs = () => {
           },
           tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
+          tabBarShowLabel: false,
         })}>
         <Tab.Screen
           options={{
-            tabBarLabel: 'Home',
             headerShown: false,
           }}
           name={homeName}

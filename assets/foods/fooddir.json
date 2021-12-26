@@ -1,0 +1,46 @@
+{
+  "curry": {
+    "name": "curry",
+    "image": "assets/foods/curry.jpg"
+  },
+  "friedchicken": {
+    "name": "friedchicken",
+    "image": "assets/foods/friedchicken.jpg"
+  },
+  "hamburger": {
+    "name": "hamburger",
+    "image": "assets/foods/hamburger.jpg"
+  },
+  "kbbq": {
+    "name": "kbbq",
+    "image": "assets/foods/kbbq.jpg"
+  },
+  "kimchistew": {
+    "name": "kimchistew",
+    "image": "assets/foods/kimchistew.jpg"
+  },
+  "pho": {
+    "name": "pho",
+    "image": "assets/foods/pho.jpg"
+  },
+  "pizza": {
+    "name": "pizza",
+    "image": "assets/foods/pizza.jpg"
+  },
+  "poke": {
+    "name": "poke",
+    "image": "assets/foods/poke.jpg"
+  },
+  "ramen": {
+    "name": "ramen",
+    "image": "assets/foods/ramen.jpg"
+  },
+  "sushi": {
+    "name": "sushi",
+    "image": "assets/foods/sushi.jpg"
+  },
+  "taco": {
+    "name": "taco",
+    "image":   "assets/foods/taco.jpg"
+  }
+}
